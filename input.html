@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>나를 소개하는 입력폼</h1>
+    <form action="/submit" method="POST">
+        <label>이름: </label>
+        <input type="text"><br>
+        <label for="">성별 : </label>
+        <input type="radio" name="gender" value="male">남
+        <input type="radio" name="gender" value="female">여<br><br>
+        <label>좋아하는 과목 (복수 선택): </label><br>
+        <input type ="checkbox" name="subject" value="math"> 수학<br>
+        <input type ="checkbox" name="subject" value="info"> 정보<br>
+        <input type ="checkbox" name="subject" value="english"> 영어<br><br>
+        <label>장래희망: </lavel>
+        <select name="dream">
+            <option value="dev">개발자</option>
+            <option value="designer">디자이너</option>
+            <option value="teacher">교사</option>
+            <option value="etc">기타></option>
+        </select><br><br>
+        <label>자기소개 (100자 이내):</label><br>
+        <textarea name="intro" rows="4" cols="40" placeholder="저는 코딩을 좋아하는 1학년입니다."></textarea><br><br>
+        <button type="submit">제출하기</button>
+    </form>
+</body>
+</html>
